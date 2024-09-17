@@ -1,0 +1,807 @@
+{
+	"Surround with Katex tags (inline)": {
+		"scope": "markdown,latex",
+		"prefix": "katexienv",
+		"body": [
+			"$",
+			"${TM_SELECTED_TEXT}$0",
+			"$"
+		]
+	},
+	"Surround with Katex tags (block)": {
+		"scope": "markdown,latex",
+		"prefix": "katexbenv",
+		"body": [
+			"$$",
+			"${TM_SELECTED_TEXT}$0",
+			"$$"
+		]
+	},
+	"Square root": {
+		"scope": "latex",
+		"prefix": "sqrt",
+		"body": "\\sqrt[${1:}]{$2}$0"
+	},
+	"Power": {
+		"scope": "latex",
+		"prefix": "power",
+		"body": "$1^{$2}$0"
+	},
+	"Vector": {
+		"scope": "latex",
+		"prefix": "vector",
+		"body": "\\overrightarrow{$1}$0"
+	},
+	"Vector norm": {
+		"scope": "latex",
+		"prefix": "norm",
+		"body": "\\lVert \\overrightarrow{$1} \\rVert$0"
+	},
+	"Parenthesis matrix": {
+		"scope": "latex",
+		"prefix": "matrixp",
+		"body": [
+			"\\begin{pmatrix}",
+			"${1} & ${2} \\\\\\\\",
+			"${3} & ${4} \\\\\\\\",
+			"\\end{pmatrix}",
+			"$0"
+		]
+	},
+	"Vertical matrix": {
+		"scope": "latex",
+		"prefix": "matrixv",
+		"body": [
+			"\\begin{vmatrix}",
+			"${1} & ${2} \\\\\\\\",
+			"${3} & ${4} \\\\\\\\",
+			"\\end{vmatrix}",
+			"$0"
+		]
+	},
+	"Gamma": {
+		"scope": "latex",
+		"prefix": "gamma",
+		"body": "\\gamma"
+	},
+	"Delta": {
+		"scope": "latex",
+		"prefix": "delta",
+		"body": "\\delta"
+	},
+	"Theta": {
+		"scope": "latex",
+		"prefix": "theta",
+		"body": "\\theta"
+	},
+	"Boxed": {
+		"scope": "latex",
+		"prefix": "boxed",
+		"body": "\\boxed{${TM_SELECTED_TEXT}}"
+	},
+	"Not equal": {
+		"scope": "latex",
+		"prefix": "neq",
+		"body": "\\neq"
+	},
+	"Fraction": {
+		"scope": "latex",
+		"prefix": "fraction",
+		"body": "\\frac{$1}{$2}$0"
+	},
+	"Integral": {
+		"scope": "latex",
+		"prefix": "integral",
+		"body": "\\int_{$1}^{$2} $0"
+	},
+	"Summation": {
+		"scope": "latex",
+		"prefix": "sum",
+		"body": "\\sum_{$1}^{$2} $0"
+	},
+	"Product": {
+		"scope": "latex",
+		"prefix": "prod",
+		"body": "\\prod_{$1}^{$2} $0"
+	},
+	"Union": {
+		"scope": "latex",
+		"prefix": "union",
+		"body": "\\cup"
+	},
+	"Intersection": {
+		"scope": "latex",
+		"prefix": "intersection",
+		"body": "\\cap"
+	},
+	"Subset": {
+		"scope": "latex",
+		"prefix": "subset",
+		"body": "\\subseteq"
+	},
+	"Superset": {
+		"scope": "latex",
+		"prefix": "superset",
+		"body": "\\supseteq"
+	},
+	"Absolute value": {
+		"scope": "latex",
+		"prefix": "abs",
+		"body": "\\lvert ${TM_SELECTED_TEXT} \\rvert$0"
+	},
+	"Dot product": {
+		"scope": "latex",
+		"prefix": "dot",
+		"body": "{\\mathbf{\\cdot}}"
+	},
+	"Cross product": {
+		"scope": "latex",
+		"prefix": "cross",
+		"body": "{\\mathbf{\\times}}"
+	},
+	"Natural logarithm": {
+		"scope": "latex",
+		"prefix": "ln",
+		"body": "\\ln(${1:x})$0"
+	},
+	"Logarithm base n": {
+		"scope": "latex",
+		"prefix": "log",
+		"body": "\\log_{$1}(${2:x})$0"
+	},
+	"Exponential": {
+		"scope": "latex",
+		"prefix": "exp",
+		"body": "e^{$1}$0"
+	},
+	"Limit": {
+		"scope": "latex",
+		"prefix": "limit",
+		"body": "\\lim_{$1 \\to $2} $0"
+	},
+	"Derivative": {
+		"scope": "latex",
+		"prefix": "deriv",
+		"body": "\\frac{d}{$1}$0"
+	},
+	"Summation (with lower and upper bounds)": {
+		"scope": "latex",
+		"prefix": "sum_bounds",
+		"body": "\\sum_{$1}^{${2:\\infty}} ${3:a_n}$0"
+	},
+	"Big union": {
+		"scope": "latex",
+		"prefix": "bigunion",
+		"body": "\\bigcup_{$1}^{${2:\\infty}} $0"
+	},
+	"Big intersection": {
+		"scope": "latex",
+		"prefix": "biginter",
+		"body": "\\bigcap_{$1}^{${2:\\infty}} $0"
+	},
+	"Limit inferior": {
+		"scope": "latex",
+		"prefix": "liminf",
+		"body": "\\liminf_{$1 \\to $2} $0"
+	},
+	"Limit superior": {
+		"scope": "latex",
+		"prefix": "limsup",
+		"body": "\\limsup_{$1 \\to $2} $0"
+	},
+	"Binomial coefficient": {
+		"scope": "latex",
+		"prefix": "binom",
+		"body": "\\binom{$1}{$2}$0"
+	},
+	"Tensor product": {
+		"scope": "latex",
+		"prefix": "tensor",
+		"body": "\\otimes"
+	},
+	"Alpha (uppercase)": {
+		"scope": "latex",
+		"prefix": "Alpha",
+		"body": "\\Alpha"
+	},
+	"Beta (uppercase)": {
+		"scope": "latex",
+		"prefix": "Beta",
+		"body": "\\Beta"
+	},
+	"Gamma (uppercase)": {
+		"scope": "latex",
+		"prefix": "Gamma",
+		"body": "\\Gamma"
+	},
+	"Delta (uppercase)": {
+		"scope": "latex",
+		"prefix": "Delta",
+		"body": "\\Delta"
+	},
+	"Epsilon (uppercase)": {
+		"scope": "latex",
+		"prefix": "Epsilon",
+		"body": "\\Epsilon"
+	},
+	"Zeta (uppercase)": {
+		"scope": "latex",
+		"prefix": "Zeta",
+		"body": "\\Zeta"
+	},
+	"Eta (uppercase)": {
+		"scope": "latex",
+		"prefix": "Eta",
+		"body": "\\Eta"
+	},
+	"Theta (uppercase)": {
+		"scope": "latex",
+		"prefix": "Theta",
+		"body": "\\Theta"
+	},
+	"Iota (uppercase)": {
+		"scope": "latex",
+		"prefix": "Iota",
+		"body": "\\Iota"
+	},
+	"Kappa (uppercase)": {
+		"scope": "latex",
+		"prefix": "Kappa",
+		"body": "\\Kappa"
+	},
+	"Lambda (uppercase)": {
+		"scope": "latex",
+		"prefix": "Lambda",
+		"body": "\\Lambda"
+	},
+	"Mu (uppercase)": {
+		"scope": "latex",
+		"prefix": "Mu",
+		"body": "\\Mu"
+	},
+	"Nu (uppercase)": {
+		"scope": "latex",
+		"prefix": "Nu",
+		"body": "\\Nu"
+	},
+	"Xi (uppercase)": {
+		"scope": "latex",
+		"prefix": "Xi",
+		"body": "\\Xi"
+	},
+	"Omicron (uppercase)": {
+		"scope": "latex",
+		"prefix": "Omicron",
+		"body": "\\Omicron"
+	},
+	"Pi (uppercase)": {
+		"scope": "latex",
+		"prefix": "Pi",
+		"body": "\\Pi"
+	},
+	"Rho (uppercase)": {
+		"scope": "latex",
+		"prefix": "Rho",
+		"body": "\\Rho"
+	},
+	"Sigma (uppercase)": {
+		"scope": "latex",
+		"prefix": "Sigma",
+		"body": "\\Sigma"
+	},
+	"Tau (uppercase)": {
+		"scope": "latex",
+		"prefix": "Tau",
+		"body": "\\Tau"
+	},
+	"Upsilon (uppercase)": {
+		"scope": "latex",
+		"prefix": "Upsilon",
+		"body": "\\Upsilon"
+	},
+	"Phi (uppercase)": {
+		"scope": "latex",
+		"prefix": "Phi",
+		"body": "\\Phi"
+	},
+	"Chi (uppercase)": {
+		"scope": "latex",
+		"prefix": "Chi",
+		"body": "\\Chi"
+	},
+	"Psi (uppercase)": {
+		"scope": "latex",
+		"prefix": "Psi",
+		"body": "\\Psi"
+	},
+	"Omega (uppercase)": {
+		"scope": "latex",
+		"prefix": "Omega",
+		"body": "\\Omega"
+	},
+	"alpha (lowercase)": {
+		"scope": "latex",
+		"prefix": "alpha",
+		"body": "\\alpha"
+	},
+	"beta (lowercase)": {
+		"scope": "latex",
+		"prefix": "beta",
+		"body": "\\beta"
+	},
+	"gamma (lowercase)": {
+		"scope": "latex",
+		"prefix": "gamma",
+		"body": "\\gamma"
+	},
+	"delta (lowercase)": {
+		"scope": "latex",
+		"prefix": "delta",
+		"body": "\\delta"
+	},
+	"epsilon (lowercase)": {
+		"scope": "latex",
+		"prefix": "epsilon",
+		"body": "\\epsilon"
+	},
+	"zeta (lowercase)": {
+		"scope": "latex",
+		"prefix": "zeta",
+		"body": "\\zeta"
+	},
+	"eta (lowercase)": {
+		"scope": "latex",
+		"prefix": "eta",
+		"body": "\\eta"
+	},
+	"theta (lowercase)": {
+		"scope": "latex",
+		"prefix": "theta",
+		"body": "\\theta"
+	},
+	"iota (lowercase)": {
+		"scope": "latex",
+		"prefix": "iota",
+		"body": "\\iota"
+	},
+	"kappa (lowercase)": {
+		"scope": "latex",
+		"prefix": "kappa",
+		"body": "\\kappa"
+	},
+	"lambda (lowercase)": {
+		"scope": "latex",
+		"prefix": "lambda",
+		"body": "\\lambda"
+	},
+	"mu (lowercase)": {
+		"scope": "latex",
+		"prefix": "mu",
+		"body": "\\mu"
+	},
+	"nu (lowercase)": {
+		"scope": "latex",
+		"prefix": "nu",
+		"body": "\\nu"
+	},
+	"xi (lowercase)": {
+		"scope": "latex",
+		"prefix": "xi",
+		"body": "\\xi"
+	},
+	"omicron (lowercase)": {
+		"scope": "latex",
+		"prefix": "omicron",
+		"body": "\\omicron"
+	},
+	"pi (lowercase)": {
+		"scope": "latex",
+		"prefix": "pi",
+		"body": "\\pi"
+	},
+	"rho (lowercase)": {
+		"scope": "latex",
+		"prefix": "rho",
+		"body": "\\rho"
+	},
+	"sigma (lowercase)": {
+		"scope": "latex",
+		"prefix": "sigma",
+		"body": "\\sigma"
+	},
+	"tau (lowercase)": {
+		"scope": "latex",
+		"prefix": "tau",
+		"body": "\\tau"
+	},
+	"upsilon (lowercase)": {
+		"scope": "latex",
+		"prefix": "upsilon",
+		"body": "\\upsilon"
+	},
+	"phi (lowercase)": {
+		"scope": "latex",
+		"prefix": "phi",
+		"body": "\\phi"
+	},
+	"chi (lowercase)": {
+		"scope": "latex",
+		"prefix": "chi",
+		"body": "\\chi"
+	},
+	"psi (lowercase)": {
+		"scope": "latex",
+		"prefix": "psi",
+		"body": "\\psi"
+	},
+	"omega (lowercase)": {
+		"scope": "latex",
+		"prefix": "omega",
+		"body": "\\omega"
+	},
+	"Circle arrow left": {
+		"scope": "latex",
+		"prefix": "circlearrowleft",
+		"body": "\\circlearrowleft"
+	},
+	"Left harpoon up": {
+		"scope": "latex",
+		"prefix": "leftharpoonup",
+		"body": "\\leftharpoonup"
+	},
+	"Right double arrow": {
+		"scope": "latex",
+		"prefix": "rArr",
+		"body": "\\rArr"
+	},
+	"Circle arrow right": {
+		"scope": "latex",
+		"prefix": "circlearrowright",
+		"body": "\\circlearrowright"
+	},
+	"Left left arrows": {
+		"scope": "latex",
+		"prefix": "leftleftarrows",
+		"body": "\\leftleftarrows"
+	},
+	"Right arrow": {
+		"scope": "latex",
+		"prefix": "rarr",
+		"body": "\\rarr"
+	},
+	"Curve arrow left": {
+		"scope": "latex",
+		"prefix": "curvearrowleft",
+		"body": "\\curvearrowleft"
+	},
+	"Left right arrow": {
+		"scope": "latex",
+		"prefix": "leftrightarrow",
+		"body": "\\leftrightarrow"
+	},
+	"Restriction": {
+		"scope": "latex",
+		"prefix": "restriction",
+		"body": "\\restriction"
+	},
+	"Curve arrow right": {
+		"scope": "latex",
+		"prefix": "curvearrowright",
+		"body": "\\curvearrowright"
+	},
+	"Left right double arrow": {
+		"scope": "latex",
+		"prefix": "Leftrightarrow",
+		"body": "\\Leftrightarrow"
+	},
+	"Right arrow (alternative)": {
+		"scope": "latex",
+		"prefix": "rightarrow",
+		"body": "\\rightarrow"
+	},
+	"Down double arrow": {
+		"scope": "latex",
+		"prefix": "Darr",
+		"body": "\\Darr"
+	},
+	"Left right arrows": {
+		"scope": "latex",
+		"prefix": "leftrightarrows",
+		"body": "\\leftrightarrows"
+	},
+	"Right double arrow (alternative)": {
+		"scope": "latex",
+		"prefix": "Rightarrow",
+		"body": "\\Rightarrow"
+	},
+	"Down double arrow (alternative)": {
+		"scope": "latex",
+		"prefix": "dArr",
+		"body": "\\dArr"
+	},
+	"Left right harpoons": {
+		"scope": "latex",
+		"prefix": "leftrightharpoons",
+		"body": "\\leftrightharpoons"
+	},
+	"Right tail arrow": {
+		"scope": "latex",
+		"prefix": "rightarrowtail",
+		"body": "\\rightarrowtail"
+	},
+	"Down arrow": {
+		"scope": "latex",
+		"prefix": "darr",
+		"body": "\\darr"
+	},
+	"Left right squiggle arrow": {
+		"scope": "latex",
+		"prefix": "leftrightsquigarrow",
+		"body": "\\leftrightsquigarrow"
+	},
+	"Right harpoon down": {
+		"scope": "latex",
+		"prefix": "rightharpoondown",
+		"body": "\\rightharpoondown"
+	},
+	"Dash left arrow": {
+		"scope": "latex",
+		"prefix": "dashleftarrow",
+		"body": "\\dashleftarrow"
+	},
+	"Left double arrow": {
+		"scope": "latex",
+		"prefix": "Lleftarrow",
+		"body": "\\Lleftarrow"
+	},
+	"Right harpoon up": {
+		"scope": "latex",
+		"prefix": "rightharpoonup",
+		"body": "\\rightharpoonup"
+	},
+	"Dash right arrow": {
+		"scope": "latex",
+		"prefix": "dashrightarrow",
+		"body": "\\dashrightarrow"
+	},
+	"Long left arrow": {
+		"scope": "latex",
+		"prefix": "longleftarrow",
+		"body": "\\longleftarrow"
+	},
+	"Right left arrows": {
+		"scope": "latex",
+		"prefix": "rightleftarrows",
+		"body": "\\rightleftarrows"
+	},
+	"Right down double arrows": {
+		"scope": "latex",
+		"prefix": "downdownarrows",
+		"body": "\\downdownarrows"
+	},
+	"Long left right double arrow": {
+		"scope": "latex",
+		"prefix": "Longleftrightarrow",
+		"body": "\\Longleftrightarrow"
+	},
+	"Right squiggle arrow": {
+		"scope": "latex",
+		"prefix": "rightsquigarrow",
+		"body": "\\rightsquigarrow"
+	},
+	"Down left harpoon": {
+		"scope": "latex",
+		"prefix": "downharpoonleft",
+		"body": "\\downharpoonleft"
+	},
+	"Long mapsto": {
+		"scope": "latex",
+		"prefix": "longmapsto",
+		"body": "\\longmapsto"
+	},
+	"Right double double arrow": {
+		"scope": "latex",
+		"prefix": "Rrightarrow",
+		"body": "\\Rrightarrow"
+	},
+	"Down right harpoon": {
+		"scope": "latex",
+		"prefix": "downharpoonright",
+		"body": "\\downharpoonright"
+	},
+	"Long right arrow": {
+		"scope": "latex",
+		"prefix": "longrightarrow",
+		"body": "\\longrightarrow"
+	},
+	"Rsh": {
+		"scope": "latex",
+		"prefix": "Rsh",
+		"body": "\\Rsh"
+	},
+	"Gets": {
+		"scope": "latex",
+		"prefix": "gets",
+		"body": "\\gets"
+	},
+	"Long double right arrow": {
+		"scope": "latex",
+		"prefix": "Longrightarrow",
+		"body": "\\Longrightarrow"
+	},
+	"Se arrow": {
+		"scope": "latex",
+		"prefix": "searrow",
+		"body": "\\searrow"
+	},
+	"Harr": {
+		"scope": "latex",
+		"prefix": "Harr",
+		"body": "\\Harr"
+	},
+	"Loop arrow left": {
+		"scope": "latex",
+		"prefix": "looparrowleft",
+		"body": "\\looparrowleft"
+	},
+	"Sw arrow": {
+		"scope": "latex",
+		"prefix": "swarrow",
+		"body": "\\swarrow"
+	},
+	"LR arrow": {
+		"scope": "latex",
+		"prefix": "lrArr",
+		"body": "\\lrArr"
+	},
+	"Two head left arrow": {
+		"scope": "latex",
+		"prefix": "twoheadleftarrow",
+		"body": "\\twoheadleftarrow"
+	},
+	"Hook left arrow": {
+		"scope": "latex",
+		"prefix": "hookleftarrow",
+		"body": "\\hookleftarrow"
+	},
+	"LrArr": {
+		"scope": "latex",
+		"prefix": "LrArr",
+		"body": "\\LrArr"
+	},
+	"Two head right arrow": {
+		"scope": "latex",
+		"prefix": "twoheadrightarrow",
+		"body": "\\twoheadrightarrow"
+	},
+	"Hook right arrow": {
+		"scope": "latex",
+		"prefix": "hookrightarrow",
+		"body": "\\hookrightarrow"
+	},
+	"Larr": {
+		"scope": "latex",
+		"prefix": "Larr",
+		"body": "\\Larr"
+	},
+	"Rarr": {
+		"scope": "latex",
+		"prefix": "Rarr",
+		"body": "\\Rarr"
+	},
+	"Cosine": {
+		"scope": "latex",
+		"prefix": "cos",
+		"body": "\\cos(${1:x})$0"
+	},
+	"Sine": {
+		"scope": "latex",
+		"prefix": "sin",
+		"body": "\\sin(${1:x})$0"
+	},
+	"Tangent": {
+		"scope": "latex",
+		"prefix": "tan",
+		"body": "\\tan(${1:x})$0"
+	},
+	"Arccosine": {
+		"scope": "latex",
+		"prefix": "arccos",
+		"body": "\\arccos(${1:x})$0"
+	},
+	"Arcsine": {
+		"scope": "latex",
+		"prefix": "arcsin",
+		"body": "\\arcsin(${1:x})$0"
+	},
+	"Arctangent": {
+		"scope": "latex",
+		"prefix": "arctan",
+		"body": "\\arctan(${1:x})$0"
+	},
+	"Hyperbolic Cosine": {
+		"scope": "latex",
+		"prefix": "cosh",
+		"body": "\\cosh(${1:x})$0"
+	},
+	"Hyperbolic Sine": {
+		"scope": "latex",
+		"prefix": "sinh",
+		"body": "\\sinh(${1:x})$0"
+	},
+	"Hyperbolic Tangent": {
+		"scope": "latex",
+		"prefix": "tanh",
+		"body": "\\tanh(${1:x})$0"
+	},
+	"Secant": {
+		"scope": "latex",
+		"prefix": "sec",
+		"body": "\\sec(${1:x})$0"
+	},
+	"Cosecant": {
+		"scope": "latex",
+		"prefix": "csc",
+		"body": "\\csc(${1:x})$0"
+	},
+	"Cotangent": {
+		"scope": "latex",
+		"prefix": "cot",
+		"body": "\\cot(${1:x})$0"
+	},
+	"Arcsecant": {
+		"scope": "latex",
+		"prefix": "arcsec",
+		"body": "\\arcsec(${1:x})$0"
+	},
+	"Arccosecant": {
+		"scope": "latex",
+		"prefix": "arccsc",
+		"body": "\\arccsc(${1:x})$0"
+	},
+	"Arccotangent": {
+		"scope": "latex",
+		"prefix": "arccot",
+		"body": "\\arccot(${1:x})$0"
+	},
+	"Logarithm": {
+		"scope": "latex",
+		"prefix": "log",
+		"body": "\\log(${1:x})$0"
+	},
+	"Natural Logarithm": {
+		"scope": "latex",
+		"prefix": "ln",
+		"body": "\\ln(${1:x})$0"
+	},
+	"Partial Derivative": {
+		"scope": "latex",
+		"prefix": "pderiv",
+		"body": "\\frac{\\partial}{\\partial ${1: x}} {${2:f(x)}}$0"
+	},
+	"Double Integral": {
+		"scope": "latex",
+		"prefix": "iint",
+		"body": "\\iint $0"
+	},
+	"Triple Integral": {
+		"scope": "latex",
+		"prefix": "iiint",
+		"body": "\\iiint $0"
+	},
+	"Absolute Value": {
+		"scope": "latex",
+		"prefix": "abs",
+		"body": "\\lvert ${1:x} \\rvert$0"
+	},
+	"Floor": {
+		"scope": "latex",
+		"prefix": "floor",
+		"body": "\\lfloor ${1:x} \\rfloor$0"
+	},
+	"Ceiling": {
+		"scope": "latex",
+		"prefix": "ceil",
+		"body": "\\lceil ${1:x} \\rceil$0"
+	},
+}
