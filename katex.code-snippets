@@ -35,7 +35,7 @@
 	"Vector norm": {
 		"scope": "latex",
 		"prefix": "norm",
-		"body": "\\lVert \\overrightarrow{$1} \\rVert$0"
+		"body": "\\lVert $1 \\rVert$0"
 	},
 	"Parenthesis matrix": {
 		"scope": "latex",
@@ -163,6 +163,11 @@
 		"scope": "latex",
 		"prefix": "deriv",
 		"body": "\\frac{d}{$1}$0"
+	},
+	"Partial derivative": {
+		"scope": "latex",
+		"prefix": "pderiv",
+		"body": "\\frac{\\partial}{$1}$0"
 	},
 	"Summation (with lower and upper bounds)": {
 		"scope": "latex",
@@ -777,7 +782,7 @@
 	"Partial Derivative": {
 		"scope": "latex",
 		"prefix": "pderiv",
-		"body": "\\frac{\\partial}{\\partial ${1: x}} {${2:f(x)}}$0"
+		"body": "\\frac{\\partial}{\\partial${1:x}} {${2:f(x)}}$0"
 	},
 	"Double Integral": {
 		"scope": "latex",
@@ -804,4 +809,34 @@
 		"prefix": "ceil",
 		"body": "\\lceil ${1:x} \\rceil$0"
 	},
+	"Newline": {
+		"scope": "latex",
+		"prefix": "newline",
+		"body": "\\newline "
+	},
+	"Perpendicular": {
+		"scope": "latex",
+		"prefix": "perp",
+		"body": "\\perp "
+	},
+	"Cancel": {
+		"scope": "latex",
+		"prefix": "cancel",
+		"body": "\\cancel{${TM_SELECTED_TEXT}}"
+	},
+	"In": {
+		"scope": "latex",
+		"prefix": "in",
+		"body": "\\in"
+	},
+	"Not In": {
+		"scope": "latex",
+		"prefix": "nin",
+		"body": "\\notin"
+	},
+	"Exists": {
+		"scope": "latex",
+		"prefix": "exists",
+		"body": "\\exists"
+	}
 }
